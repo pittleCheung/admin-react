@@ -1,0 +1,1 @@
+import{$ as e}from"./index.0ce2eb6d.js";function n(t){return e.get("/ad",{params:t})}const r=t=>e.get("ad/saleStatus",{params:t});function s(t){return e.get("/ad/info",{params:{id:t}})}function o(t){return e.post("/ad/destory",{id:t})}function u(){return e.get("/ad/getallrelate")}function d(t){return e.post("/ad/store",t)}export{s as a,u as b,o as d,n as g,d as s,r as u};

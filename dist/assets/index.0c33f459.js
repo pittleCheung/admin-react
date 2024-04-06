@@ -1,0 +1,1 @@
+import{r as e,j as t}from"./index.0ce2eb6d.js";function s(){return e.exports.useState({page_now:1,page_size:30}),e.exports.useRef(),e.exports.useState([]),t("div",{children:"hello world"})}export{s as default};

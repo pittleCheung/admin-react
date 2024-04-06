@@ -1,0 +1,80 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite --mode development",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "npm run lint:script && npm run lint:style",
+    "lint:script": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./",
+    "lint:style": "stylelint --fix \"src/**/*.{css,scss,less}\"",
+    "format": "prettier --write './{src,test}/**/*.{ts,tsx}'",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@reduxjs/toolkit": "^1.9.2",
+    "@tanstack/react-query": "^5.24.8",
+    "@toast-ui/editor": "^3.2.1",
+    "@toast-ui/react-editor": "^3.2.2",
+    "@types/crypto-js": "^4.1.1",
+    "@types/node": "^18.6.1",
+    "ali-oss": "^6.20.0",
+    "antd": "^5.1.7",
+    "axios": "^1.3.2",
+    "classnames": "^2.3.2",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.10",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "nanoid": "^5.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router": "^6.8.0",
+    "react-router-dom": "^6.8.0",
+    "redux": "^4.2.1",
+    "zustand": "^4.3.9"
+  },
+  "devDependencies": {
+    "@amatlash/vite-plugin-stylelint": "^1.2.0",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-redux": "^7.1.25",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "@vitejs/plugin-react": "^2.0.0",
+    "commitlint": "^17.0.3",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0",
+    "vite-plugin-eslint": "^1.7.0",
+    "vite-plugin-svgr": "^2.4.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts}": [
+      "npm run lint:script",
+      "git add ."
+    ],
+    "**/*.{scss}": [
+      "npm run lint:style",
+      "git add ."
+    ]
+  }
+}

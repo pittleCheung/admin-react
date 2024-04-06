@@ -1,0 +1,113 @@
+.formContainer {
+  position: relative;
+  width: 520px;
+  max-width: 100%;
+
+  // padding: 160px 35px 0;
+  margin: 200px auto;
+  overflow: hidden;
+}
+
+/* .logintitle{
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  font-size: 30px;
+  color:white;
+} */
+// @bg: #2d3a4b;
+// @dark_gray: #889aa4;
+// @light_gray: #eee;
+
+.siteFormItemIcon {
+  font-size: 16px;
+  background: #2d3a4b !important;
+}
+
+.loginFormButton {
+  display: flex;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.captchaContainer {
+  display: flex;
+}
+
+.captchaImg {
+  width: 150px;
+  height: 50px;
+  margin-left: 5px;
+  border: 1px solid;
+}
+
+.remember {
+  color: #409eff !important;
+}
+
+.rememberDefault {
+  padding-left: 10px;
+  color: #606266;
+}
+
+:global {
+  .loginWrapper {
+    .ant-input-affix-wrapper {
+      // border: 1px solid rgba(255, 255, 255, 0.1);
+      // background: rgba(0, 0, 0, 0.1)!important;
+      // border-radius: 5px;
+      // color: #454545;
+      // border: none;
+    }
+
+    // ant-input-affix-wrapper ant-input-affix-wrapper-status-success
+
+    // .ant-row.ant-form-item.ant-form-item-has-success{
+    //   background: rgba(0, 0, 0, 0.1)!important;
+    // }
+    // .ant-input-affix-wrapper-focused{
+    //   background: rgba(0, 0, 0, 0.1)!important;
+    // }
+    // .ant-input-affix-wrapper.ant-input-affix-wrapper-status-success{
+    //   background: rgba(0, 0, 0, 0.1)!important;
+    // }
+    #normal_login_username {
+      background: #2d3a4b !important;
+    }
+
+    #normal_login_password {
+      background: #2d3a4b !important;
+    }
+
+    .ant-input-affix-wrapper.ant-input-affix-wrapper-status-success.ant-input-affix-wrapper-focused
+      .ant-input {
+      background: #2d3a4b !important;
+    }
+
+    .ant-input-affix-wrapper {
+      padding: 12px 10px !important;
+      background: #2d3a4b !important;
+
+      .ant-input {
+        text-overflow: ellipsis; // 输入框文字超出失去焦点后显示省略号
+        background: #2d3a4b !important;
+      }
+
+      .ant-input[placeholder] {
+        color: #fff !important; // placeholder的颜色样式
+      }
+    }
+  }
+}
+
+.titleContainer {
+  position: relative;
+
+  .title {
+    margin: 0 auto 40px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+}
